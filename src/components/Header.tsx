@@ -63,6 +63,8 @@ const Header = () => {
             <img
               src={logo}
               alt="Mahakal Bikes Logo"
+              width={80}
+              height={80}
               className="w-full h-full object-contain"
             />
           </div>

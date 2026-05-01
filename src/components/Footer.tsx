@@ -21,6 +21,9 @@ const Footer = () => {
               <img
                 src={logo}
                 alt="Mahakal Bikes Logo"
+                width={54}
+                height={40}
+                loading="lazy"
                 className="h-10 object-contain"
               />
               <span className="font-bold text-lg">Mahakal Bikes</span>

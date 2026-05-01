@@ -59,7 +59,7 @@ const ReviewsSection = () => (
           <span className="text-sm text-muted-foreground">
             4.8 / 5 from Google Reviews
           </span>
-          <img src={googleLogo} alt="Google" className="w-5 h-5 ml-2" />
+          <img src={googleLogo} alt="Google" width={20} height={20} loading="lazy" className="w-5 h-5 ml-2" />
         </motion.div>
       </div>
 
@@ -79,6 +79,9 @@ const ReviewsSection = () => (
               <img
                 src={r.image}
                 alt={r.name}
+                width={40}
+                height={40}
+                loading="lazy"
                 className="w-10 h-10 rounded-full object-cover"
               />
 
@@ -90,7 +93,7 @@ const ReviewsSection = () => (
                   <p className="text-xs text-muted-foreground">
                     {r.time}
                   </p>
-                  <img src={googleLogo} alt="Google" className="w-4 h-4" />
+                  <img src={googleLogo} alt="Google" width={16} height={16} loading="lazy" className="w-4 h-4" />
                 </div>
               </div>
             </div>
@@ -131,6 +134,9 @@ const ReviewsSection = () => (
         <img
           src={qrCode}
           alt="Google Review QR"
+          width={160}
+          height={160}
+          loading="lazy"
           className="w-40 h-40 mb-4 border rounded-lg shadow"
         />
 
