@@ -12,6 +12,19 @@ export default defineConfig(({ mode }) => ({
       overlay: false,
     },
   },
+  esbuild: {
+    drop: mode === "production" ? ["console", "debugger"] : [],
+  },
+  build: {
+    rollupOptions: {
+      output: {
+        manualChunks: {
+          vendor: ["react", "react-dom", "react-router-dom"],
+          ui: ["framer-motion", "lucide-react", "@radix-ui/react-dialog", "@radix-ui/react-slot"],
+        },
+      },
+    },
+  },
   plugins: [react()],
   resolve: {
     alias: {
